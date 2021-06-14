@@ -2,10 +2,10 @@ version: "3.9"
 
 services:
   django:
-    build: server/.
+    build: backend/.
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./server/:/django/
+      - ./backend/:/django/
     ports:
       - "8000:8000"
 
